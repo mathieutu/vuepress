@@ -1,3 +1,219 @@
+<a name="1.0.0-alpha.42"></a>
+# [1.0.0-alpha.42](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.41...v1.0.0-alpha.42) (2019-03-03)
+
+
+### Bug Fixes
+
+* **$theme-default:** support slot and v-pre container (close: [#1387](https://github.com/vuejs/vuepress/issues/1387)) ([#1389](https://github.com/vuejs/vuepress/issues/1389)) ([c85f62d](https://github.com/vuejs/vuepress/commit/c85f62d))
+
+
+<a name="1.0.0-alpha.41"></a>
+# [1.0.0-alpha.41](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.40...v1.0.0-alpha.41) (2019-03-02)
+
+
+### Bug Fixes
+
+* **$core:** Generated js have SyntaxError when source-map is enabled (close: [#1367](https://github.com/vuejs/vuepress/issues/1367)) ([#1378](https://github.com/vuejs/vuepress/issues/1378)) ([b53324d](https://github.com/vuejs/vuepress/commit/b53324d))
+* **$core:** skip plugin on error (Related to [#1371](https://github.com/vuejs/vuepress/issues/1371)) [#1383](https://github.com/vuejs/vuepress/issues/1383) ([7d2c065](https://github.com/vuejs/vuepress/commit/7d2c065))
+* **$core:** support theme index file which is not at root (close: [#1362](https://github.com/vuejs/vuepress/issues/1362)) ([#1376](https://github.com/vuejs/vuepress/issues/1376)) ([204cbe4](https://github.com/vuejs/vuepress/commit/204cbe4))
+* **$markdown:** fix line highlighting (close: [#1364](https://github.com/vuejs/vuepress/issues/1364)) ([#1369](https://github.com/vuejs/vuepress/issues/1369)) ([5a111a2](https://github.com/vuejs/vuepress/commit/5a111a2))
+* **$theme-default:** encodeURI for sidebar items which contain CJK characters (close: [#717](https://github.com/vuejs/vuepress/issues/717)) ([285b368](https://github.com/vuejs/vuepress/commit/285b368))
+
+
+### Features
+
+* **$plugin-container:** init ([#1381](https://github.com/vuejs/vuepress/issues/1381)) ([ad0ff72](https://github.com/vuejs/vuepress/commit/ad0ff72))
+* **$markdown:** TOC component (close: [#1275](https://github.com/vuejs/vuepress/issues/1275)) ([#1375](https://github.com/vuejs/vuepress/issues/1375)) ([760f90b](https://github.com/vuejs/vuepress/commit/760f90b))
+* **$plugin-nprogress:** allow nprogress use different color and add docs ([#1366](https://github.com/vuejs/vuepress/issues/1366)) ([1a928c7](https://github.com/vuejs/vuepress/commit/1a928c7))
+
+
+
+<a name="1.0.0-alpha.40"></a>
+# [1.0.0-alpha.40](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.39...v1.0.0-alpha.40) (2019-02-27)
+
+
+### Bug Fixes
+
+* **$cli:** re-support option `--open` (close: [#1320](https://github.com/vuejs/vuepress/issues/1320)) ([#1329](https://github.com/vuejs/vuepress/issues/1329)) ([b97e9ee](https://github.com/vuejs/vuepress/commit/b97e9ee))
+* **$core:** handle redirect based on lower case ([#1333](https://github.com/vuejs/vuepress/issues/1333)) ([505fea6](https://github.com/vuejs/vuepress/commit/505fea6))
+* **$core:** update outbound link icon alignment ([#1308](https://github.com/vuejs/vuepress/issues/1308)) ([6de1c30](https://github.com/vuejs/vuepress/commit/6de1c30))
+* **$plugin-pwa:** service worker doesn't work under sub directory (close: [#1311](https://github.com/vuejs/vuepress/issues/1311)) ([0d56a99](https://github.com/vuejs/vuepress/commit/0d56a99))
+
+
+### Features
+
+* **$core:** refine theme api ([d16d3d5](https://github.com/vuejs/vuepress/commit/d16d3d5)) ([#1319](https://github.com/vuejs/vuepress/issues/1319))
+  - Check out [Theme Inheritance](https://v1.vuepress.vuejs.org/theme/inheritance.html) for more details.
+* **$markdown:** code snippet hmr (close [#1309](https://github.com/vuejs/vuepress/issues/1309)) ([#1358](https://github.com/vuejs/vuepress/issues/1358)) ([8f83a17](https://github.com/vuejs/vuepress/commit/8f83a17))
+* **$markdown:** refine markdown api ([#1337](https://github.com/vuejs/vuepress/issues/1337)) ([b79768c](https://github.com/vuejs/vuepress/commit/b79768c))
+* **$markdown:** cache parser ([#1359](https://github.com/vuejs/vuepress/issues/1359)) ([f04adbf](https://github.com/vuejs/vuepress/commit/f04adbf))
+* **$theme-default:** add ruby shortcut `rb` support for syntax highlighting ([#1312](https://github.com/vuejs/vuepress/issues/1312)) ([dad2928](https://github.com/vuejs/vuepress/commit/dad2928))
+* **$theme-default:** should allow for optional `h1` text at homepage ([#1326](https://github.com/vuejs/vuepress/issues/1326)) ([598799f](https://github.com/vuejs/vuepress/commit/598799f))
+* **$plugin-clean-urls:** init ([#1339](https://github.com/vuejs/vuepress/issues/1339)) ([40b3da8](https://github.com/vuejs/vuepress/commit/40b3da8))
+
+
+
+<a name="1.0.0-alpha.39"></a>
+# [1.0.0-alpha.39](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.38...v1.0.0-alpha.39) (2019-02-17)
+
+
+### Bug Fixes
+
+* **$core:** cannot read property 'globalLayout' of null (close: [#1304](https://github.com/vuejs/vuepress/issues/1304)) ([94dab12](https://github.com/vuejs/vuepress/commit/94dab12))
+* **$core:** cannot use relative path in a permalink page (close: [#1227](https://github.com/vuejs/vuepress/issues/1227))([#1298](https://github.com/vuejs/vuepress/issues/1298)) ([d560e22](https://github.com/vuejs/vuepress/commit/d560e22))
+  - Check out the [blog post](https://vuepress-relative-paths.ulivz.com/) for more details.
+
+
+<a name="1.0.0-alpha.38"></a>
+# [1.0.0-alpha.38](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.37...v1.0.0-alpha.38) (2019-02-16)
+
+
+### Bug Fixes
+
+* **$plugin-pwa:** set current registration scope for service worker (close: [#1271](https://github.com/vuejs/vuepress/issues/1271)) ([#1302](https://github.com/vuejs/vuepress/issues/1302)) ([4b2b0f4](https://github.com/vuejs/vuepress/commit/4b2b0f4))
+* **$theme-default:** sidebar group item cannot contain empty children (close: [#1278](https://github.com/vuejs/vuepress/issues/1278)) ([5f1eb0e](https://github.com/vuejs/vuepress/commit/5f1eb0e))
+
+
+### Features
+
+* **$core:** support global layout (close: [#1226](https://github.com/vuejs/vuepress/issues/1226)) ([c91f55a](https://github.com/vuejs/vuepress/commit/c91f55a))
+* **$theme-default:** disable search box via frontmatter (close: [#1287](https://github.com/vuejs/vuepress/issues/1287)) ([#1288](https://github.com/vuejs/vuepress/issues/1288)) ([54e9eb0](https://github.com/vuejs/vuepress/commit/54e9eb0))
+
+
+
+
+<a name="1.0.0-alpha.37"></a>
+# [1.0.0-alpha.37](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.36...v1.0.0-alpha.37) (2019-02-08)
+
+
+### Features
+
+* **$core:** redirects for clean urls ([#1269](https://github.com/vuejs/vuepress/issues/1269)) ([213bb34](https://github.com/vuejs/vuepress/commit/213bb34))
+* **$theme-default:** fallback current group node to page node if children doesn't exist ([11ce576](https://github.com/vuejs/vuepress/commit/11ce576))
+* **$theme-default:** highlight sidebar link text at root level like sidebar group heading text ([05e793f](https://github.com/vuejs/vuepress/commit/05e793f))
+* **$theme-default:** unify the text color of sidebar heading text and root-level sidebar link ([3e47a20](https://github.com/vuejs/vuepress/commit/3e47a20))
+
+
+
+<a name="1.0.0-alpha.36"></a>
+# [1.0.0-alpha.36](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.35...v1.0.0-alpha.36) (2019-02-03)
+
+
+### Bug Fixes
+
+* **$core:** SFC page compile error (close: [#1110](https://github.com/vuejs/vuepress/issues/1110)) ([8f5b0cd](https://github.com/vuejs/vuepress/commit/8f5b0cd))
+
+
+### Features
+
+* **$theme-default:** refine sidebar groups ([#1257](https://github.com/vuejs/vuepress/issues/1257)) ([01dd45b](https://github.com/vuejs/vuepress/commit/01dd45b)), closes [#814](https://github.com/vuejs/vuepress/issues/814) [#783](https://github.com/vuejs/vuepress/issues/783) [#287](https://github.com/vuejs/vuepress/issues/287)
+  - `sidebarDepth` for a specified sidebar group.
+  - Nested sidebar groups.
+  - Clickable heading for sidebar groups.
+
+
+
+<a name="1.0.0-alpha.35"></a>
+# [1.0.0-alpha.35](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.34...v1.0.0-alpha.35) (2019-01-30)
+
+
+### Bug Fixes
+
+* **$core:** bust cache of extra watching files ([075f470](https://github.com/vuejs/vuepress/commit/075f470))
+* **$core:** never throw error if layout component does not exist ([#1247](https://github.com/vuejs/vuepress/issues/1247)) ([49c5983](https://github.com/vuejs/vuepress/commit/49c5983))
+* **$core:** style and platte path sep on windows ([#1246](https://github.com/vuejs/vuepress/issues/1246)) ([592918a](https://github.com/vuejs/vuepress/commit/592918a))
+* **$theme-default:** bitbucket edit link goes to wrong link (close: [#1235](https://github.com/vuejs/vuepress/issues/1235)) ([#1248](https://github.com/vuejs/vuepress/issues/1248)) ([3c5b3a6](https://github.com/vuejs/vuepress/commit/3c5b3a6))
+
+
+### Features
+
+* **$core:** exclude temp dir from being ignored watching ([c6797dd](https://github.com/vuejs/vuepress/commit/c6797dd))
+
+
+
+<a name="1.0.0-alpha.34"></a>
+# [1.0.0-alpha.34](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.33...v1.0.0-alpha.34) (2019-01-29)
+
+
+### Bug Fixes
+
+* **$core:** Cannot load assets when `base` is not '/' (close:  [#1238](https://github.com/vuejs/vuepress/issues/1238))([#1239](https://github.com/vuejs/vuepress/issues/1239)) ([8a234bb](https://github.com/vuejs/vuepress/commit/8a234bb))
+  <br>This is a regression issue of leverage webpack-dev-server at [#1195](https://github.com/vuejs/vuepress/issues/1195).
+
+* **$markdown:** Remove colon as separator for [Import Code Snippets](https://v1.vuepress.vuejs.org/guide/markdown.html#import-code-snippets) (close: [#1151](https://github.com/vuejs/vuepress/issues/1151)) ([#1236](https://github.com/vuejs/vuepress/issues/1236)) ([099d346](https://github.com/vuejs/vuepress/commit/099d346))
+
+
+### Features
+
+* **$core:** Support extra watching files ([02cc268](https://github.com/vuejs/vuepress/commit/02cc268)), 
+  <br>e.g.
+  ```js
+  // .vuepress/config.js
+  module.exports = {
+    extraWatchFiles: [
+      require.resolve('./sidebar.js')
+      // or '.vuepress/sidebar.js'
+    ]
+  }
+  ```
+
+
+
+<a name="1.0.0-alpha.33"></a>
+# [1.0.0-alpha.33](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.32...v1.0.0-alpha.33) (2019-01-27)
+
+
+### Features
+
+* **$core:** Leverage `webpack-dev-server` and sunset `webpack-serve` ([#1195](https://github.com/vuejs/vuepress/issues/1195)) ([81e3ef6](https://github.com/vuejs/vuepress/commit/81e3ef6))
+  - Add new plugin option api [beforeDevServer](https://v1.vuepress.vuejs.org/plugin/option-api.html#beforedevserver) and [afterDevServer](https://v1.vuepress.vuejs.org/plugin/option-api.html#afterdevserver).
+  - Remove `enhanceDevServer`.  
+  - Publish [vuepress-plugin-export](https://github.com/ulivz/vuepress-plugin-export).
+* **$core:** Allow a theme package using a sub directory (close [#1204](https://github.com/vuejs/vuepress/issues/1204)) ([#1206](https://github.com/vuejs/vuepress/issues/1206)) ([febe3a7](https://github.com/vuejs/vuepress/commit/febe3a7))
+* **$theme-default:** Support shortcut for `sh` and `yml`. (close: [#1221](https://github.com/vuejs/vuepress/issues/1221)) ([fc5dba8](https://github.com/vuejs/vuepress/commit/fc5dba8))
+
+### BREAKING CHANGES
+
+* **$core:** - Plugin option `enhanceDevServer` was removed.
+  - **For 0.x users**, there is no any effect since we didn't expose API to modify it.
+  - **For 1.x users whose version of VuePress is lower than 1.0.0-alpha.33**, you should use [`beforeDevServer`](https://v1.vuepress.vuejs.org/plugin/option-api.html#beforedevserver)(i.e. [before](https://webpack.js.org/configuration/dev-server/#devserver-before) in `webpack-dev-server`) to replace `enhanceDevServer`, you can also use [`afterDevServer`](https://v1.vuepress.vuejs.org/plugin/option-api.html#afterdevserver)(i.e. [after](https://webpack.js.org/configuration/dev-server/#devserver-after) in `webpack-dev-server`) to execute custom middleware after all other middleware internally within the server.
+
+<a name="1.0.0-alpha.32"></a>
+# [1.0.0-alpha.32](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.31...v1.0.0-alpha.32) (2019-01-15)
+
+
+### Bug Fixes
+
+* **$plugin-blog,$plugin-google-analytics:** Uniform plugin file name to `enhanceAppFile` ([#1194](https://github.com/vuejs/vuepress/issues/1194)) ([dce17c6](https://github.com/vuejs/vuepress/commit/dce17c6))
+* **$core:** Move cac dependency to `vuepress` package (close: [#1183](https://github.com/vuejs/vuepress/issues/1183)) ([#1184](https://github.com/vuejs/vuepress/issues/1184)) ([d160e68](https://github.com/vuejs/vuepress/commit/d160e68))
+* **$plugin-pagination:** Won't work when `perPagePosts` is 1 and total posts is 2 ([#1176](https://github.com/vuejs/vuepress/issues/1176)) ([8735d2c](https://github.com/vuejs/vuepress/commit/8735d2c))
+* **$shared-utils:** missing `gray-matter` dependency (close: [#1190](https://github.com/vuejs/vuepress/issues/1190)) ([02bf7b9](https://github.com/vuejs/vuepress/commit/02bf7b9))
+* **$theme-default:** Tag `<main>` has no matching end tag ([#1181](https://github.com/vuejs/vuepress/issues/1181)) ([c82cc10](https://github.com/vuejs/vuepress/commit/c82cc10))
+
+
+
+<a name="1.0.0-alpha.31"></a>
+# [1.0.0-alpha.31](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.30...v1.0.0-alpha.31) (2019-01-10)
+
+
+### Bug Fixes
+
+* **$core:** Check if layout exists ([#1166](https://github.com/vuejs/vuepress/issues/1166)) ([38d1dea](https://github.com/vuejs/vuepress/commit/38d1dea))
+* **$core:** `NotFound` component doesn't work (close: [#1130](https://github.com/vuejs/vuepress/issues/1130)) ([b562972](https://github.com/vuejs/vuepress/commit/b562972))
+* **$core:** Mormalize override stylus file path in windows ([#1164](https://github.com/vuejs/vuepress/issues/1164)) ([9665196](https://github.com/vuejs/vuepress/commit/9665196))
+* **$core:** frontmatter attribute in `additionalPages` is ignored when combined with content (close: [#1157](https://github.com/vuejs/vuepress/issues/1157)) ([87894ff](https://github.com/vuejs/vuepress/commit/87894ff))
+* **$plugin-back-to-top:** use `$accent-color`. (close: [#1121](https://github.com/vuejs/vuepress/issues/1121)) ([#1122](https://github.com/vuejs/vuepress/issues/1122)) ([929da11](https://github.com/vuejs/vuepress/commit/929da11))
+* **$theme-default:** style is incompatible in low version iOS (<= iOS9) ([#1136](https://github.com/vuejs/vuepress/issues/1136)) ([f46de67](https://github.com/vuejs/vuepress/commit/f46de67))
+
+
+### Features
+
+* **$new-package:** standalone nprogress plugin ([25db1ba](https://github.com/vuejs/vuepress/commit/25db1ba))
+* **$plugin-google-analytics:** set `anonymizeIp` to true in order to be compliant with GDPR.([#1153](https://github.com/vuejs/vuepress/issues/1153)) ([122e024](https://github.com/vuejs/vuepress/commit/122e024))
+* **$theme-default:** semantic HTML (close: [#1154](https://github.com/vuejs/vuepress/issues/1154))([#1156](https://github.com/vuejs/vuepress/issues/1156)) ([ede57b0](https://github.com/vuejs/vuepress/commit/ede57b0))
+
+
+
 
 <a name="1.0.0-alpha.30"></a>
 # [1.0.0-alpha.30](https://github.com/vuejs/vuepress/compare/v1.0.0-alpha.29...v1.0.0-alpha.30) (2018-12-18)
@@ -46,7 +262,7 @@
 
 * **$core:** pass generated page paths to `generated` hook ([#925](https://github.com/vuejs/vuepress/issues/925)) ([5ee2b2b](https://github.com/vuejs/vuepress/commit/5ee2b2b))
 * **$core:** `extendCli` Plugin Option API ([#1069](https://github.com/vuejs/vuepress/issues/1069)) ([e963731](https://github.com/vuejs/vuepress/commit/e963731))
-  - See [docs](https://vuepress.vuejs.org/plugin/option-api.html#extendcli).
+  - See [docs](https://v1.vuepress.vuejs.org/plugin/option-api.html#extendcli).
 * **$plugin-search:** searchable paths with test RegExp ([#1032](https://github.com/vuejs/vuepress/issues/1032)) ([d6bddf1](https://github.com/vuejs/vuepress/commit/d6bddf1))
 
 
@@ -442,7 +658,7 @@
 ### Features
 
 - **Plugin API**
-  - [Documentation](https://vuepress.vuejs.org/plugin/)
+  - [Documentation](https://v1.vuepress.vuejs.org/plugin/)
   - Multiple official plugins
     - [@vuepress/plugin-active-header-links](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/plugin-active-header-links)
     - [@vuepress/plugin-back-to-top](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-back-to-top) (Thanks to @ycmjason )
@@ -457,18 +673,18 @@
 
 - **Refined Theme API**
   - From now on, the theme will no longer use Layout.vue as the entry point, but you can have your own configuration. For example, a theme can have some built-in plugins.
-  - [Documentation](https://vuepress.vuejs.org/theme/)
+  - [Documentation](https://v1.vuepress.vuejs.org/theme/)
 
 - **Permalinks**
   - From now on, VuePress supports custom routing in addition to the default file-level-based routing.
-  - [Documentation](https://vuepress.vuejs.org/guide/permalinks.html)
+  - [Documentation](https://v1.vuepress.vuejs.org/guide/permalinks.html)
 
 - **Markdown slots**
-  - [Documentation](https://vuepress.vuejs.org/guide/markdown-slot.html)
+  - [Documentation](https://v1.vuepress.vuejs.org/guide/markdown-slot.html)
 
 - **Free to add new pages**
   - You can add new pages with content (i.e. pointing to markdown files) or no content (i.e. common routes).
-  - [Documentation](https://vuepress.vuejs.org/plugin/option-api.html#additionalpages)
+  - [Documentation](https://v1.vuepress.vuejs.org/plugin/option-api.html#additionalpages)
 
 - **Custom temp path**
   - The running of VuePress actually depends on some temporary files generated during the build time. Before that, its default location is in `node_modules`, but now you can start configuring it, but don't forget to add it to gitignore.
@@ -620,7 +836,7 @@
 * **$core:**: version data layer ([0c5b752](https://github.com/vuejs/vuepress/commit/0c5b752))
 * **$default-theme:** new file-level API: `style.styl`. ([2f53f2f](https://github.com/vuejs/vuepress/commit/2f53f2f))
   1. Fixed overriding css variable doesn't work at `0.11.0` (close: [#639](https://github.com/vuejs/vuepress/issues/639))
-  2. Split `override.styl` into two APIs: `override.styl` and `style.styl`, the former will focus on ONLY the stylus constants override, while the latter will focus on styles override or custom styles. See also: https://vuepress.vuejs.org/default-theme-config/#simple-css-override.
+  2. Split `override.styl` into two APIs: `override.styl` and `style.styl`, the former will focus on ONLY the stylus constants override, while the latter will focus on styles override or custom styles. See also: https://v1.vuepress.vuejs.org/default-theme-config/#simple-css-override.
 
 
 <a name="0.11.0"></a>

@@ -10,15 +10,22 @@ metaTitle: Google Analytics 插件 | VuePress
 ## 安装
 
 ```bash
-yarn add -D @vuepress/plugin-google-analytics
-# OR npm install -D @vuepress/plugin-google-analytics
+yarn add -D @vuepress/plugin-google-analytics@next
+# OR npm install -D @vuepress/plugin-google-analytics@next
 ```
 
 ## 使用
 
 ```javascript
 module.exports = {
-  plugins: ['@vuepress/google-analytics'] 
+  plugins: [
+    [ 
+      '@vuepress/google-analytics',
+      {
+        'ga': '' // UA-00000000-0
+      }
+    ]  
+  ] 
 }
 ```
 

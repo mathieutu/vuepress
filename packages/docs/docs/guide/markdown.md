@@ -66,9 +66,9 @@ lang: en-US
 ---
 ```
 
-The data will be available to the rest of the page, plus all custom and theming components.
+This data will be available to the rest of the page, along with all custom and theming components.
 
-For detailed introduction, please move to [Front Matter](./frontmatter.md).
+For more details, check out the [Front Matter](./frontmatter.md) page.
 
 ## GitHub-Style Tables
 
@@ -108,15 +108,21 @@ A list of all emojis available can be found [here](https://github.com/markdown-i
 
 **Input**
 
-```
+```md
 [[toc]]
+```
+
+or
+
+```md
+<TOC/>
 ```
 
 **Output**
 
 [[toc]]
 
-Rendering of TOC can be configured using the [`markdown.toc`](../config/README.md#markdown-toc) option.
+Rendering of TOC can be configured using the [`markdown.toc`](../config/README.md#markdown-toc) option, or as props of [TOC component](./using-vue.md#toc), like `<TOC list-type="ol" :include-level="[2, Infinity]"/>`.
 
 ## Custom Containers
 
@@ -162,6 +168,60 @@ Danger zone, do not proceed
 Danger zone, do not proceed
 :::
 
+## Syntax Highlighting in Code Blocks
+
+VuePress uses [Prism](https://prismjs.com/) to highlight language syntax in markdown code blocks, using coloured text. Prism supports a wide variety of programming languages. All you need to do is append a valid language alias to the beginning backticks for the code block:
+
+**Input**
+
+````
+``` js
+export default {
+  name: 'MyComponent',
+  // ...
+}
+```
+````
+
+**Output**
+
+``` js
+export default {
+  name: 'MyComponent',
+  // ...
+}
+```
+
+**Input**
+
+````
+``` html
+<ul>
+  <li
+    v-for="todo in todos"
+    :key="todo.id"
+  >
+    {{ todo.text }}
+  </li>
+</ul>
+```
+````
+
+**Output**
+
+``` html
+<ul>
+  <li
+    v-for="todo in todos"
+    :key="todo.id"
+  >
+    {{ todo.text }}
+  </li>
+</ul>
+```
+
+Check out [the list of valid languages](https://prismjs.com/#languages-list) on the Prism website.
+
 ## Line Highlighting in Code Blocks
 
 **Input**
@@ -199,7 +259,7 @@ module.exports = {
   markdown: {
     lineNumbers: true
   }
-}  
+}
 ```
 
 <!-- TODO Support line numbers for specific fence block -->
@@ -208,12 +268,12 @@ module.exports = {
 
 <picture>
   <source srcset="/line-numbers-desktop.png" media="(min-width: 719px)">
-  <img class="line-numbers-desktop-snap" alt="Image">
+  <img src="/line-numbers-desktop.png" class="line-numbers-desktop-snap" alt="Image">
 </picture>
 
 <picture>
   <source srcset="/line-numbers-mobile.gif" media="(max-width: 719px)">
-  <img class="line-numbers-mobile-snap" alt="Image">
+  <img src="/line-numbers-mobile.gif" class="line-numbers-mobile-snap" alt="Image">
 </picture>
 
 <style>
@@ -245,7 +305,7 @@ You can import code snippets from existing files via following syntax:
 It also supports [line highlighting](#line-highlighting-in-code-blocks):
 
 ``` md
-<<< @/filepath{highlightLines} 
+<<< @/filepath{highlightLines}
 ```
 
 **Input**

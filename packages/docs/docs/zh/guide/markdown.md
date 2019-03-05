@@ -106,15 +106,21 @@ lang: en-US
 
 **Input**
 
-```
+```md
 [[toc]]
+```
+
+或者
+
+```md
+<TOC/>
 ```
 
 **Output**
 
 [[toc]]
 
-目录（Table of Contents）的渲染可以通过  [`markdown.toc`](../config/README.md#markdown-toc) 选项来配置。
+目录（Table of Contents）的渲染可以通过  [`markdown.toc`](../config/README.md#markdown-toc) 选项来配置，也可以在 [TOC 组件](./using-vue.md#toc)中直接传入，如 `<TOC list-type="ol" :include-level="[2, Infinity]"/>`。
 
 ## 自定义容器
 
@@ -160,12 +166,67 @@ Danger zone, do not proceed
 Danger zone, do not proceed
 :::
 
+## 代码块中的语法高亮
+
+VuePress 使用了 [Prism](https://prismjs.com/) 来为 markdown 中的代码块实现语法高亮。Prism 支持大量的编程语言，你需要做的只是在代码块的开始倒勾中附加一个有效的语言别名：
+
+**Input**
+
+````
+``` js
+export default {
+  name: 'MyComponent',
+  // ...
+}
+```
+````
+
+**Output**
+
+``` js
+export default {
+  name: 'MyComponent',
+  // ...
+}
+```
+
+**Input**
+
+````
+``` html
+<ul>
+  <li
+    v-for="todo in todos"
+    :key="todo.id"
+  >
+    {{ todo.text }}
+  </li>
+</ul>
+```
+````
+
+**Output**
+
+``` html
+<ul>
+  <li
+    v-for="todo in todos"
+    :key="todo.id"
+  >
+    {{ todo.text }}
+  </li>
+</ul>
+```
+
+在 Prism 的网站上查看 [合法的语言列表](https://prismjs.com/#languages-list)。
+
+
 ## 代码块中的行高亮
 
 **Input**
 
 ````
-``` js{4}
+``` js {4}
 export default {
   data () {
     return {
