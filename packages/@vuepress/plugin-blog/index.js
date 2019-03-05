@@ -136,29 +136,18 @@ module.exports = (options, ctx) => {
           return map
         }, {})
 
-      const PREFIX = 'vuepress_blog'
-      return [
-        {
-          name: `${PREFIX}/frontmatterClassifications.js`,
-          content: `export default ${JSON.stringify(frontmatterClassificationPages, null, 2)}`
-        },
-        {
-          name: `${PREFIX}/frontmatterClassified.js`,
-          content: `export default ${JSON.stringify(frontmatterClassifiedPageMap, null, 2)}`
-        },
-        {
-          name: `${PREFIX}/paginations.js`,
-          content: `export default ${JSON.stringify(ctx.paginations, null, 2)}`
-        },
-        {
-          name: `${PREFIX}/pageFilters.js`,
-          content: `export default ${mapToString(ctx.pageFilters)}`
-        },
-        {
-          name: `${PREFIX}/pageSorters.js`,
-          content: `export default ${mapToString(ctx.pageSorters)}`
+      return {
+        name: 'blog.js',
+        data: {
+          frontmatterClassificationPages,
+          frontmatterClassifiedPageMap,
+          paginations: ctx.paginations,
+          pageFilters: ctx.pageFilters,
+          pageSorters: ctx.pageSorters,
+          // TODO: remove
+          options: handleOptions(options, ctx)
         }
-      ]
+      }
     },
 
     enhanceAppFiles: [
@@ -166,15 +155,6 @@ module.exports = (options, ctx) => {
       path.resolve(__dirname, 'client/pagination.js')
     ]
   }
-}
-
-function mapToString (map) {
-  let str = `{\n`
-  for (const key of Object.keys(map)) {
-    str += `  "${key}": ${map[key]},\n`
-  }
-  str += '}'
-  return str
 }
 
 function clientFrontmatterClassificationPageFilter (page, keys, value) {

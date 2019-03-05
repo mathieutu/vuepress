@@ -1,9 +1,13 @@
 import Vue from 'vue'
-import paginations from '@dynamic/vuepress_blog/paginations'
-import frontmatterClassifications from '@dynamic/vuepress_blog/frontmatterClassifications'
-import pageFilters from '@dynamic/vuepress_blog/pageFilters'
-import pageSorters from '@dynamic/vuepress_blog/pageSorters'
 import _debug from 'debug'
+import blogData from '@dynamic/blog'
+
+const {
+  frontmatterClassifications,
+  pageFilters,
+  pageSorters,
+  paginations
+} = blogData
 
 const debug = _debug('plugin-blog:pagination')
 

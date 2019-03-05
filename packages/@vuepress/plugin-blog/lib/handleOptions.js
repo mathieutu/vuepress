@@ -1,5 +1,5 @@
 function handleOptions (options, ctx) {
-  const { layoutComponentMap } = ctx
+  const { themeAPI: { layoutComponentMap }} = ctx
   const {
     directories = [],
     frontmatters = []

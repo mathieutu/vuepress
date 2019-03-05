@@ -1,5 +1,7 @@
 import { findPageByKey } from '@app/util'
-import frontmatterClassifiedPageMap from '@dynamic/vuepress_blog/frontmatterClassified'
+import blogData from '@dynamic/blog'
+
+const { frontmatterClassifiedPageMap } = blogData
 
 class Classifiable {
   constructor (metaMap, pages) {
