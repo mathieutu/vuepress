@@ -1,7 +1,7 @@
 {
-  "name": "@vuepress/plugin-last-updated",
+  "name": "@vuepress/plugin-git-log",
   "version": "1.0.0-alpha.42",
-  "description": "last-updated plugin for vuepress",
+  "description": "git log plugin for vuepress",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vuejs/vuepress.git",
-    "directory": "packages/@vuepress/plugin-last-updated"
+    "directory": "packages/@vuepress/plugin-git-log"
   },
   "keywords": [
     "documentation",
@@ -17,12 +17,12 @@
     "vuepress",
     "generator"
   ],
-  "author": "ULIVZ <chl814@foxmail.com>",
+  "author": "Shigma <1700011071@pku.edu.cn>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vuejs/vuepress/issues"
   },
-  "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/plugin-last-updated#readme",
+  "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/plugin-git-log#readme",
   "dependencies": {
     "cross-spawn": "^6.0.5"
   }

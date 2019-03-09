@@ -69,7 +69,7 @@ export default {
 
   computed: {
     lastUpdated () {
-      return this.$page.lastUpdated
+      return (this.$page.git || {}).updated
     },
 
     lastUpdatedText () {
